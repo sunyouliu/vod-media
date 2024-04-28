@@ -39,7 +39,7 @@ vod-media-parent
 ### 问题
 虽然说是很简单的项目，看起来没几个页面，但还是遇到了很多意想不到的问题
 - druid-version 1.2.22, select alway true condition not allow
-  问题原因出现在mapper.xml文件中写sql语句，习惯性写where 1=1语句；网络上有建议直接拿掉wall filter，这种遇到问题不解决问题，选择绕道的思路真是清奇；还有博文说是druid 1.2.22版本中的逻辑实现bug，需要调换配置；但如果新版本更新解决了bug，不是莫名其妙的埋了一个雷吗？我没有去查看源码实现，费时间；换个思路，是否有办法在写sql语句时拿掉1=1的优雅做法，果然mybatis是有提供的，可以使用<where></where>标签代替where，这解决了我的问题；  
+  问题原因出现在mapper.xml文件中写sql语句，习惯性写where 1=1语句；网络上有建议直接拿掉wall filter，这种遇到问题不解决问题，选择绕道的思路真是清奇；还有博文说是druid 1.2.22版本中的逻辑实现bug，需要调换配置；但如果新版本更新解决了bug，不是莫名其妙的埋了一个雷吗？我没有去查看源码实现，费时间；换个思路，是否有办法在写sql语句时拿掉1=1的优雅做法，果然mybatis是有提供的，可以使用`<where></where>`标签代替where，这解决了我的问题；  
 
 - 图片等资源上传到minio上，但是要浏览文件通过`getPresignedObjectUrl`方法拿到的是time bound url，是会过期的url；我只是修改了对应bucket的Access Policy为public即可在浏览器中直接访问文件；
  ![image](https://github.com/sunyouliu/vod-media/assets/168319680/6011b758-ccbb-4b21-bdc5-f9a4932e41d8)
