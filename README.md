@@ -33,7 +33,7 @@ vod-media-parent
 `验证邮件`  
 ![image](https://github.com/sunyouliu/vod-media/assets/168319680/f5443c38-2463-44c8-b706-372808600cdf)
 ![image](https://github.com/sunyouliu/vod-media/assets/168319680/13223601-4ea0-4333-8d60-2246cec49e4b)
-
+*邮件内容用的是定义好的html模板*
 
 ### 技术难点
 
@@ -50,6 +50,9 @@ vod-media-parent
   
 - 415 Unsupported MediaType in Spring Application  
   在Typescript中上传文件，只是这个form表单中还有其他信息一起提交，有意思的是网络上很多的推荐做法是在spring-boot服务端分开接收这两部分信息，用@RequestPart来接收文件及其它信息，类似upload(@RequestPart("file") MultipartFile,@RequestPart("fileInfo") String fileInfo)，这里更有意思的是fileInfo是json串，需要再parse一番，那是否有更优雅的解决方案？在一个对象中同时接收文件信息及文件？答案是肯定的，使用@ModelAttribute注解；比如：upload(@Valid @ModelAttribute UploadRequest req)
+
+- 选择本地视频文件并回显，即在未上传前进行加载预览问题（how to preload video before uploading)
+- 截取视频第一帧作为视频封面问题(how to use first frame of the video as the video cover)
 
 ### 联系方式（请注明来源、来意）  
 ![image](https://github.com/sunyouliu/vod-media/assets/168319680/b6ec43ac-3d05-4921-a219-9f39bf4b603b)
