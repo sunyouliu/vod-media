@@ -5,7 +5,7 @@
 
 ### 技术选型
 
-jwt minio rabbitmq mybatis-plus redis spring-boot hls m3u8 vue3 typescript
+jwt minio rabbitmq mybatis-plus redis spring-boot ffmpeg hls m3u8 vue3 typescript
 
 ### 项目结构
 
