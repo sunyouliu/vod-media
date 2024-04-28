@@ -23,10 +23,10 @@ vod-media-parent
 1. 用户注册、用户登录、忘记密码
 2. 邮件发送验证码、重置密码链接
 3. 视频分组、视频列表、视频上传、视频播放（不直接播放视频源文件，播放m3u8文件，视频加载播放速度提升不止一点点)  ![image](https://github.com/sunyouliu/vod-media/assets/168319680/a60d4430-4a2d-45ae-8856-efdea5ff0f06)
-
 4. minio存储图片、视频源文件、视频流文件
 5. rabbitmq处理业务耦合，在源视频上传后，通知对视频文件进行切片，生成m3u8和ts文件
-6. 其它...
+6. jwt实现权限认证及access_token创建获取、refresh_token刷新等等，有效的实现对api请求接口控制
+7. 其它...
    
 `演示`  
 ![1](https://github.com/sunyouliu/vod-media/blob/main/Screen-2024-04-28-103202.gif)
@@ -35,8 +35,6 @@ vod-media-parent
 ![image](https://github.com/sunyouliu/vod-media/assets/168319680/f5443c38-2463-44c8-b706-372808600cdf)
 ![image](https://github.com/sunyouliu/vod-media/assets/168319680/13223601-4ea0-4333-8d60-2246cec49e4b)
 *邮件内容用的是定义好的html模板*
-
-### 技术难点
 
 ### 问题
 虽然说是很简单的项目，看起来没几个页面，但还是遇到了很多意想不到的问题
