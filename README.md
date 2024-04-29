@@ -20,13 +20,14 @@ vod-media-parent
 ### 项目完成度（80%）
 
 前端页面可能略显粗糙，没有UI/UE，这是一个开发差不多能做的了，`已实现功能`
-1. 用户注册、用户登录、忘记密码
+1. 用户注册、用户登录[登录次数限制]、忘记密码
 2. 邮件发送验证码、重置密码链接
 3. 视频分组、视频列表、视频上传、视频播放（不直接播放视频源文件，播放m3u8文件，视频加载播放速度提升不止一点点)  ![image](https://github.com/sunyouliu/vod-media/assets/168319680/a60d4430-4a2d-45ae-8856-efdea5ff0f06)
 4. minio存储图片、视频源文件、视频流文件
 5. rabbitmq处理业务耦合，在源视频上传后，通知对视频文件进行切片，生成m3u8和ts文件
 6. jwt实现权限认证及access_token创建获取、refresh_token刷新等等，有效的实现对api请求接口控制
-7. 其它...
+7. 
+8. 其它...
    
 `演示`  
 ![333](https://github.com/sunyouliu/vod-media/assets/168319680/bf55bbae-b43e-42b6-8e92-e5bae96aebed)
