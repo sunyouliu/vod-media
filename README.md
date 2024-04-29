@@ -29,8 +29,10 @@ vod-media-parent
 7. 其它...
    
 `演示`  
-![1](https://github.com/sunyouliu/vod-media/blob/main/Screen-2024-04-28-103202.gif)
-![2](https://github.com/sunyouliu/vod-media/blob/main/Screen-2024-04-28-104158.gif)  
+![333](https://github.com/sunyouliu/vod-media/assets/168319680/bf55bbae-b43e-42b6-8e92-e5bae96aebed)
+![444](https://github.com/sunyouliu/vod-media/assets/168319680/e6fa03f4-0851-41b4-b637-1da8917aab4c)
+
+
 `验证邮件`  
 ![image](https://github.com/sunyouliu/vod-media/assets/168319680/f5443c38-2463-44c8-b706-372808600cdf)
 ![image](https://github.com/sunyouliu/vod-media/assets/168319680/13223601-4ea0-4333-8d60-2246cec49e4b)
